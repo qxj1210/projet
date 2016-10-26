@@ -55,31 +55,3 @@ class CitiesControllerTest < ActionController::TestCase
     assert_redirected_to cities_path
   end
 end
-
-
-  test "should show city" do
-    VCR.use_cassette("forecast") do
-       get :show, id: @city
-       assert_response :success
-    end
-  end
-
-  test "should get edit" do
-    get :edit, id: @city
-    assert_response :success
-  end
-
-  test "should update city" do
-    VCR.use_cassette("nominatim") do
-      patch :update, id: @city, city: { lat: @city.lat, lon: @city.lon, name: @city.name }
-      assert_redirected_to city_path(assigns(:city))
-    end
-  end
-  test "should destroy city" do
-    assert_difference('City.count', -1) do
-      delete :destroy, id: @city
-    end
-
-    assert_redirected_to cities_path
-  end
-end
