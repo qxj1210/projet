@@ -8,3 +8,8 @@ deploy:
   app: ancient-oasis-71484
   on:
     repo: qxj1210/projet
+addons:
+    code_climate:
+        repo_token: 769b11bd648bd853d4dc3fb6d5e2198936880fc925e6ad52fc37ed2ac67ad09b
+after_success:
+  - bundle exec codeclimate-test-reporter

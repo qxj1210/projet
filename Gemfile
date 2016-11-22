@@ -51,5 +51,10 @@ gem 'typhoeus', '~> 1.1'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+group :test do
+  gem "simplecov"
+  gem "codeclimate-test-reporter", "~> 1.0.0"
+end
+
 # Use debugger
 # gem 'debugger', group: [:development, :test]
