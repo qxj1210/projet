@@ -15,10 +15,4 @@ class CityTest < ActiveSupport::TestCase
      end
   end
 
-  test 'weather forecast' do 
-     VCR.use_cassette("weather") do
-       weather = cities(:one).weather
-       assert weather=='rain'
-     end
-  end
 end
