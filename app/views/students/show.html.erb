@@ -1,24 +1,24 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Name:</strong>
+  <strong class="text-info"> Name:</strong>
   <%= @student.name %>
 </p>
 
 <p>
-  <strong>Surname:</strong>
+  <strong class="text-info"> Surname:</strong>
   <%= @student.surname %>
 </p>
 
 <p>
-  <strong>Birthday:</strong>
+  <strong class="text-info"> Birthday:</strong>
   <%= @student.birthday %>
 </p>
 
 <p>
-  <strong>major:</strong>
+  <strong class="text-info"> major:</strong>
   <%= @student.major? %>
 </p>
 
-<%= link_to 'Edit', edit_student_path(@student) %> |
-<%= link_to 'Back', students_path %>
+<%= link_to 'Edit', edit_student_path(@student),class:'btn btn-success' %> |
+<%= link_to 'Back', students_path,class:'btn btn-success' %>

@@ -1,34 +1,34 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Name:</strong>
+  <strong class="text-info">Name:</strong>
   <%= @city.name %>
 </p>
 
 <p>
-  <strong>Lat:</strong>
+  <strong class="text-info">Lat:</strong>
   <%= @city.lat %>
 </p>
 
 <p>
-  <strong>Lon:</strong>
+  <strong class="text-info">Lon:</strong>
   <%= @city.lon %>
 </p>
 
 <p>
-  <strong>Temperature:</strong>
+  <strong class="text-info">Temperature:</strong>
   <%= @forecasts[:temperature] %>
 </p>
 
 <p>
-  <strong>Summary:</strong>
+  <strong class="text-info">Summary:</strong>
   <%= @forecasts[:summary] %>
 </p>
 
 <p>
-  <strong>Windspeed:</strong>
+  <strong class="text-info">Windspeed:</strong>
   <%= @forecasts[:windSpeed] %>
 </p>
 
-<%= link_to 'Edit', edit_city_path(@city) %> |
-<%= link_to 'Back', cities_path %>
+<%= link_to 'Edit', edit_city_path(@city),class:'btn btn-success' %> |
+<%= link_to 'Back', cities_path,class:'btn btn-success' %>

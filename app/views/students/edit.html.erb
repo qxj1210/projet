@@ -1,6 +1,8 @@
 <h1>Editing student</h1>
 
-<%= render 'form' %>
 
-<%= link_to 'Show', @student %> |
-<%= link_to 'Back', students_path %>
+<div class="container">
+<%= render 'form' %>
+</div>
+<%= link_to 'Show', @student,class:'btn btn-success' %> |
+<%= link_to 'Back', students_path,class:'btn btn-success' %>
